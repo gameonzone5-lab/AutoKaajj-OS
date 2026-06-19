@@ -18,6 +18,9 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
+    - name: Fix NDK Platforms Error
+      run: echo "ndk.dir=$ANDROID_HOME/ndk/25.2.9519653" > local.properties
+
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
