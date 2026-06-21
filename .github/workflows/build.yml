@@ -18,12 +18,11 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
-    - name: Fix NDK Missing Folders (Magic Trick Part 2)
+    - name: Install Correct NDK Version
       run: |
-        export NDK_DIR=/usr/local/lib/android/sdk/ndk/25.2.9519653
-        echo "ndk.dir=$NDK_DIR" > local.properties
-        mkdir -p $NDK_DIR/platforms
-        mkdir -p $NDK_DIR/toolchains
+        echo "Installing NDK 21..."
+        echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install "ndk;21.4.7075529"
+        echo "ndk.dir=$ANDROID_HOME/ndk/21.4.7075529" > local.properties
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
