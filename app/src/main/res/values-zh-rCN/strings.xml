@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">UserLAnd</string>
+    <string name="app_name">AutoKaaj OS</string>
     <string name="apps">应用程序</string>
     <string name="sessions">会话</string>
     <string name="edit_session">编辑会话</string>
@@ -40,7 +40,7 @@
     <string name="prompt_client_type">客户端类别：</string>
     <string name="services_notification_channel_name">服务</string>
     <string name="services_notification_channel_description">永久服务</string>
-    <string name="service_notification_title">UserLAnd</string>
+    <string name="service_notification_title">AutoKaaj OS</string>
     <string name="service_notification_description">UserLAnd在后台运行中</string>
     <string name="progress_fetching_asset_lists">正在取得素材列表&#8230;</string>
     <string name="progress_checking_for_required_updates">正在检查更新信息&#8230;</string>

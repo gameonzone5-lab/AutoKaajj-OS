@@ -1,5 +1,5 @@
 <resources>                                                         <!-- Translators, pay attention to these notes! --> 
-    <string name="app_name">UserLAnd</string>
+    <string name="app_name">AutoKaaj OS</string>
     <string name="welcome">歡迎使用 UserLAnd！</string>
     <string name="permission_request_code">1000</string>
 
@@ -97,7 +97,7 @@
     <!-- Notification strings -->
     <string name="services_notification_channel_name">服務</string>
     <string name="services_notification_channel_description">永久服務</string>
-    <string name="service_notification_title">UserLAnd</string>
+    <string name="service_notification_title">AutoKaaj OS</string>
     <string name="service_notification_description">UserLAnd 正在執行背景服務。</string>
 
     <!-- Progress bar messages -->

@@ -1,5 +1,5 @@
 <resources>                                                         <!-- Translators, pay attention to these notes! --> 
-    <string name="app_name">UserLAnd</string>
+    <string name="app_name">AutoKaaj OS</string>
     <string name="welcome">Bem-vindo ao UserLAnd!</string>
     <string name="permission_request_code">1000</string>
 
@@ -99,7 +99,7 @@
     <!-- Notification strings -->
     <string name="services_notification_channel_name">Serviços</string>
     <string name="services_notification_channel_description">Serviços persistentes</string>
-    <string name="service_notification_title">UserLAnd</string>
+    <string name="service_notification_title">AutoKaaj OS</string>
     <string name="service_notification_description">UserLAnd está executando um serviço em segundo plano.</string>
 
     <!-- Progress bar messages -->

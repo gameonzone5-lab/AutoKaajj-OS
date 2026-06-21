@@ -1,5 +1,5 @@
 <resources>                                                         <!-- Translators, pay attention to these notes! --> 
-    <string name="app_name">UserLAnd</string>
+    <string name="app_name">AutoKaaj OS</string>
     <string name="welcome">مرحبا بكم في Userland!</string>
     <string name="permission_request_code">1000</string>
   
@@ -120,7 +120,7 @@
     <!--string name="services_notification_channel_id">UserLAnd خدمات</string-->
     <string name="services_notification_channel_name">خدمات</string>
     <string name="services_notification_channel_description">الخدمات المستمرة</string>
-    <string name="service_notification_title">UserLAnd</string>
+    <string name="service_notification_title">AutoKaaj OS</string>
     <string name="service_notification_description">يدير UserLAnd خدمة خلفية.</string>
 
     <!-- Progress bar messages -->
