@@ -224,8 +224,8 @@
     <string name="alert_storage_low_message">To ensure smooth functionality of a filesystem in AutoKaaj OS, ensure there is at least 1 GB of free space.</string>
 
     <!-- Wifi alert -->
-    <string name="alert_wifi_disabled_title">No wifi!</string>
-    <string name="alert_wifi_disabled_message">A large asset (~80mb) needs to be downloaded.</string>
+    <string name="alert_wifi_disabled_title">Network Alert!</string>
+    <string name="alert_wifi_disabled_message">AutoKaaj AI Engine requires an initial core asset download (~80mb).</string>
     <string name="alert_wifi_disabled_continue_button">Continue</string>
     <string name="alert_wifi_disabled_turn_on_wifi_button">Turn On Wifi</string>
     <string name="alert_wifi_disabled_cancel_button">Cancel</string>
