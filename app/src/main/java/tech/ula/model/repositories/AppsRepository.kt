@@ -46,7 +46,7 @@ class AppsRepository(
                     remoteAppsSource.fetchAppIcon(app)
                     remoteAppsSource.fetchAppDescription(app)
                     remoteAppsSource.fetchAppScript(app)
-                                if (app.name != "Ubuntu" && app.name != "Kali") return@launch
+                                if (!app.name.contains("Ubuntu", ignoreCase = true) && !app.name.contains("Kali", ignoreCase = true)) return@launch
                     appsDao.insertApp(app) // Insert the db element last to force observer refresh
             }) }
         } catch (err: Exception) {
