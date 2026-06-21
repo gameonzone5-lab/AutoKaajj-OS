@@ -1,6 +1,6 @@
 <resources>                                                         <!-- Translators, pay attention to these notes! --> 
     <string name="app_name">AutoKaaj OS</string>
-    <string name="welcome">UserLAnd\'e Hoş Geldiniz!</string>
+    <string name="welcome">AutoKaaj OS\'e Hoş Geldiniz!</string>
     <string name="permission_request_code">1000</string>
 
     <!-- Labels -->
@@ -81,7 +81,7 @@
         %1$s \nBu sorunları gidermeye uğraşıyoruz. Yardımcı olmak isterseniz bize
         GitHub üzerinden bu hata hakkında bilgi verebilirsiniz!
     </string>
-    <string name="illegal_state_title">UserLAnd yasak bir duruma girdi!</string>
+    <string name="illegal_state_title">AutoKaaj OS yasak bir duruma girdi!</string>
 
     <string name="illegal_state_transition">Kötü durum geçişi: %1$s</string>
 
@@ -125,7 +125,7 @@
     <string name="services_notification_channel_name">Servisler</string>
     <string name="services_notification_channel_description">Devamlı servisler</string>
     <string name="service_notification_title">AutoKaaj OS</string>
-    <string name="service_notification_description">UserLAnd bir arka plan servisi çalıştırıyor.</string>
+    <string name="service_notification_description">AutoKaaj OS bir arka plan servisi çalıştırıyor.</string>
 
     <!-- Progress bar messages -->
     <string name="progress_start_step">Sizin için her şeyi hazırlıyoruz&#8230;</string>
@@ -204,8 +204,8 @@
     <string name="alert_need_client_app_message">Bu işlemi gerçekleştirmek için SSH, VNC veya XSDL istemcilerine ihtiyacınız var, ancak Play Store sizde yüklü değilmiş gibi gözüküyor. \n\nDevam etmek için lütfen oturumun istemci tipiyle uyuşan bir istemci uygulaması (SSH/VNC/XSDL) yükleyin.</string>
 
     <!-- Permissions necessary alert -->
-    <string name="alert_permissions_necessary_title">UserLAnd\'in izinlere ihtiyacı var!</string>
-    <string name="alert_permissions_necessary_message">Devam etmek için UserLAnd\'in depolama alanını kullanabilmesi, dosyaları indirebilmesi ve dosyaları harici depolama ile kendi yerel uygulama klasörü arasında taşıyabilmesi için izinler gerekiyor.</string>
+    <string name="alert_permissions_necessary_title">AutoKaaj OS\'in izinlere ihtiyacı var!</string>
+    <string name="alert_permissions_necessary_message">Devam etmek için AutoKaaj OS\'in depolama alanını kullanabilmesi, dosyaları indirebilmesi ve dosyaları harici depolama ile kendi yerel uygulama klasörü arasında taşıyabilmesi için izinler gerekiyor.</string>
     <string name="alert_permissions_necessary_cancel_button">İptal</string>
 
     <!-- Network unavailable alert -->
@@ -213,7 +213,7 @@
 
     <!-- Storage capacity low alert -->
     <string name="alert_storage_low_title">Depolama alanı doluyor</string>
-    <string name="alert_storage_low_message">UserLAnd\'deki bir dosya sistemini en akıcı biçimde kullanabilmek için en az 1 GB boş alanınızın olduğundan emin olun.</string>
+    <string name="alert_storage_low_message">AutoKaaj OS\'deki bir dosya sistemini en akıcı biçimde kullanabilmek için en az 1 GB boş alanınızın olduğundan emin olun.</string>
 
     <!-- Wifi alert -->
     <string name="alert_wifi_disabled_title">Wifi yok!</string>
@@ -225,7 +225,7 @@
     <!-- Toasts -->
     <string name="session_unique_name_required">Oturumlar özel bir isim gerektirir!</string>
     <string name="filesystem_unique_name_required">Dosya sistemleri özel bir isim gerektirir!</string>
-    <string name="single_session_supported">UserLAnd şu anda sadece tek bir aktif oturumu destekliyor!</string>
+    <string name="single_session_supported">AutoKaaj OS şu anda sadece tek bir aktif oturumu destekliyor!</string>
     <string name="debug_log_export_success">Hata ayıklama kaydı başarıyla dışa aktarıldı!</string>
     <string name="debug_log_export_failure">Hata ayıklama kaydı başarısız oldu!</string>
     <string name="debug_log_deleted">Hata ayıklama kaydı silindi!</string>
@@ -246,14 +246,14 @@
     <string name="no_backup_selected">Dosya sistemi içe aktarımı seçilmedi</string>
     
     <!-- Review request -->
-    <string name="review_is_user_enjoying">UserLAnd\'de eğleniyor musunuz?</string>
+    <string name="review_is_user_enjoying">AutoKaaj OS\'de eğleniyor musunuz?</string>
     <string name="review_ask_for_rating">O zaman Play Store\'da bize oy vermeye ne dersiniz?</string>
     <string name="review_ask_for_feedback">Sakıncası yoksa bize GitHub\'da geri bildirim verir misiniz?</string>
 
     <!-- Error collection opt-in -->
     <string name="opt_in_preference">Hata raporlama sistemine dahil olun</string>
-    <string name="opt_in_preference_summary">Hata raporlarını toplayıp UserLAnd\'i geliştirmemize yardımcı olun.</string>
-    <string name="opt_in_help_prompt">Bize hata raporlarınızı göndererek UserLAnd\'in daha stabil olmasına yardımcı olmak ister misiniz?</string>
+    <string name="opt_in_preference_summary">Hata raporlarını toplayıp AutoKaaj OS\'i geliştirmemize yardımcı olun.</string>
+    <string name="opt_in_help_prompt">Bize hata raporlarınızı göndererek AutoKaaj OS\'in daha stabil olmasına yardımcı olmak ister misiniz?</string>
     <string name="opt_in_error_collection_prompt">Hata raporlama sistemine dahil olunsun mu?</string>
     <string name="opt_in_secondary_prompt">Emin misiniz? Daha sonra bu ayarı ayarlar penceresinden değiştirebilirsiniz.</string>
     <string name="opt_in_secondary_pos_btn">Tamam, dahil olacağım.</string>
@@ -261,7 +261,7 @@
     <!-- Q Warning -->
     <string name="q_warning_title">Dosya erişimi değişti!</string>
     <string name="q_warning_message">
-        Android\'in sonraki sürümü, Q, uygulamamızı ve kullanıcılarımızın nasıl UserLAnd dosya
+        Android\'in sonraki sürümü, Q, uygulamamızı ve kullanıcılarımızın nasıl AutoKaaj OS dosya
         sistemlerine erişeceklerini etkileyen güncellemeler getiriyor. Bu değişikliklere uyum
         sağlamak durumunda olduğumuz için, \"/sdcard\"a ve dışına dosya aktarımı artık eskisi
         gibi işlemeyecek. Daha fazla bilgi için GitHub\'daki wiki\'mizi ziyaret edebilirsiniz.
