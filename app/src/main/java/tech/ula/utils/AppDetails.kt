@@ -15,7 +15,7 @@ class AppDetails(private val applicationFilesDir: String, private val resources:
     }
 
     private fun getDefaultIconUri(): Uri {
-        val resId = R.mipmap.ic_launcher_foreground
+        val resId = R.mipmap.ic_launcher
         return Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE +
                 "://" + resources.getResourcePackageName(resId) + '/' +
                 resources.getResourceTypeName(resId) + '/' +
