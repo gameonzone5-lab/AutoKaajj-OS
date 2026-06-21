@@ -36,7 +36,7 @@ class GithubApiClientTest {
 
     private val testRepo = "repo"
     private val testReleaseToUse = "latest"
-    private val testEndpoint = "/repos/CypherpunkArmory/UserLAnd-Assets-$testRepo/releases/$testReleaseToUse"
+    private val testEndpoint = "/repos/CypherpunkArmory/AutoKaaj OS-Assets-$testRepo/releases/$testReleaseToUse"
 
     private val testArch = "arch"
     private val testAssetsTxtUrl = "assetsTxtUrl"

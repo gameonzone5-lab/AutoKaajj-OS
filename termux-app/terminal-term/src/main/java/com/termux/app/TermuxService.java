@@ -44,7 +44,7 @@ public final class TermuxService extends Service implements SessionChangedCallba
 
     private String TAG = "TermuxService";
 
-    private static final String NOTIFICATION_CHANNEL_ID = "UserLAnd";
+    private static final String NOTIFICATION_CHANNEL_ID = "AutoKaaj OS";
 
     /** Note that this is a symlink on the Android M preview. */
     @SuppressLint("SdCardPath")
@@ -134,7 +134,7 @@ public final class TermuxService extends Service implements SessionChangedCallba
             sessionName = intent.getStringExtra("sessionName");
 
             if (username.isEmpty() || hostname.isEmpty() || port.isEmpty() || sessionName.isEmpty()) {
-                Log.e(EmulatorDebug.LOG_TAG, "Currently only intents from UserLAnd are supported");
+                Log.e(EmulatorDebug.LOG_TAG, "Currently only intents from AutoKaaj OS are supported");
             } else {
                 // Launch the main Termux app, which will now show the current session:
                 startActivity(new Intent(this, TermuxActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
@@ -172,7 +172,7 @@ public final class TermuxService extends Service implements SessionChangedCallba
         }
     }
 
-    String GROUP_KEY_USERLAND = "tech.ula.userland";
+    String GROUP_KEY_USERLAND = "tech.ula.autokaaj";
 
     private Notification buildNotification() {
         Intent notifyIntent = new Intent(this, TermuxActivity.class);

@@ -244,7 +244,7 @@ class AssetDownloaderTest {
     }
 
     @Test
-    fun `Clears download directory of userland files`() {
+    fun `Clears download directory of autokaaj files`() {
         val asset1DownloadsFile = File("${downloadDirectory.path}/${downloadMetadata1.downloadTitle}")
         val asset2DownloadsFile = File("${downloadDirectory.path}/${downloadMetadata2.downloadTitle}")
         asset1DownloadsFile.createNewFile()

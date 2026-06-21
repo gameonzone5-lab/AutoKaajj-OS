@@ -171,7 +171,7 @@ class SessionStartupFsmTest {
     }
 
     @Test
-    fun `AssetDownloadComplete events can be submitted at any time if they are not userland downloads`() {
+    fun `AssetDownloadComplete events can be submitted at any time if they are not autokaaj downloads`() {
         val downloadId = 0L
         sessionFsm.setState(WaitingForSessionSelection)
         sessionFsm.getState().observeForever(mockStateObserver)

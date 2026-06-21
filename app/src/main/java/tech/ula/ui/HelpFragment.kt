@@ -20,12 +20,12 @@ class HelpFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         github_logo.setOnClickListener {
-            val intent = Intent("android.intent.action.VIEW", Uri.parse("https://github.com/CypherpunkArmory/UserLAnd/issues"))
+            val intent = Intent("android.intent.action.VIEW", Uri.parse("https://github.com/CypherpunkArmory/AutoKaaj OS/issues"))
             startActivity(intent)
         }
 
-        userland_logo.setOnClickListener {
-            val intent = Intent("android.intent.action.VIEW", Uri.parse("https://userland.tech"))
+        autokaaj_logo.setOnClickListener {
+            val intent = Intent("android.intent.action.VIEW", Uri.parse("https://autokaaj.tech"))
             startActivity(intent)
         }
     }

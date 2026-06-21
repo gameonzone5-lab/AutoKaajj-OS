@@ -145,13 +145,13 @@ class UserFeedbackPrompter(private val activity: Activity, private val viewGroup
         get() = userHasGivenFeedback
 
     private val sendReviewIntent = {
-        val userlandPlayStoreURI = "https://play.google.com/store/apps/details?id=tech.ula"
-        val intent = Intent("android.intent.action.VIEW", Uri.parse(userlandPlayStoreURI))
+        val autokaajPlayStoreURI = "https://play.google.com/store/apps/details?id=tech.ula"
+        val intent = Intent("android.intent.action.VIEW", Uri.parse(autokaajPlayStoreURI))
         activity.startActivity(intent)
     }
 
     private val sendGithubIntent = {
-        val githubURI = "https://github.com/CypherpunkArmory/UserLAnd"
+        val githubURI = "https://github.com/CypherpunkArmory/AutoKaaj OS"
         val intent = Intent("android.intent.action.VIEW", Uri.parse(githubURI))
         activity.startActivity(intent)
     }
@@ -416,7 +416,7 @@ class ContributionPrompter(private val activity: MainActivity, private val viewG
         get() = userHasResponded
 
     private val sendGithubIntent = {
-        val githubURI = "https://github.com/CypherpunkArmory/UserLAnd/wiki/FAQ"
+        val githubURI = "https://github.com/CypherpunkArmory/AutoKaaj OS/wiki/FAQ"
         val intent = Intent("android.intent.action.VIEW", Uri.parse(githubURI))
         savedActivity.startActivity(intent)
     }

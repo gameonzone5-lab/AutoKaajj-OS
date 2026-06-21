@@ -65,7 +65,7 @@ class AppsListFragment : Fragment(), AppsListAdapter.AppsClickHandler {
         it?.let { list ->
             appsAdapter.updateApps(list)
             list_apps.scrollToPosition(0)
-            if (list.isEmpty() || userlandIsNewVersion()) {
+            if (list.isEmpty() || autokaajIsNewVersion()) {
                 doRefresh()
             }
         }
@@ -176,7 +176,7 @@ class AppsListFragment : Fragment(), AppsListAdapter.AppsClickHandler {
                 .create().show()
     }
 
-    private fun userlandIsNewVersion(): Boolean {
+    private fun autokaajIsNewVersion(): Boolean {
         val version = getUserlandVersion()
         val lastUpdatedVersion = activityContext.defaultSharedPreferences.getString("lastAppsUpdate", "")
         return version != lastUpdatedVersion

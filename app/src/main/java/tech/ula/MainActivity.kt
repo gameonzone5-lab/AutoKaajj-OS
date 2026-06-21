@@ -267,7 +267,7 @@ class MainActivity : AppCompatActivity(), SessionListFragment.SessionSelection, 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.terms_and_conditions) {
-            val intent = Intent("android.intent.action.VIEW", Uri.parse("https://userland.tech/eula"))
+            val intent = Intent("android.intent.action.VIEW", Uri.parse("https://autokaaj.tech/eula"))
             startActivity(intent)
         }
         if (item.itemId == R.id.option_wiki) {
@@ -282,7 +282,7 @@ class MainActivity : AppCompatActivity(), SessionListFragment.SessionSelection, 
     }
 
     private fun sendWikiIntent() {
-        val intent = Intent("android.intent.action.VIEW", Uri.parse("https://github.com/CypherpunkArmory/UserLAnd/wiki"))
+        val intent = Intent("android.intent.action.VIEW", Uri.parse("https://github.com/CypherpunkArmory/AutoKaaj OS/wiki"))
         startActivity(intent)
     }
 
@@ -374,7 +374,7 @@ class MainActivity : AppCompatActivity(), SessionListFragment.SessionSelection, 
 
     /*
     XSDL has a different flow than starting SSH/VNC session.  It sends an intent to XSDL with
-        with a display value.  Then XSDL sends an intent to open UserLAnd signalling
+        with a display value.  Then XSDL sends an intent to open AutoKaaj OS signalling
         that it has an xserver listening.  We set the initial display number as an environment variable
         then start a twm process to connect to XSDL's xserver.
     */
