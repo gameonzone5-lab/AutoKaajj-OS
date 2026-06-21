@@ -282,7 +282,7 @@ class MainActivity : AppCompatActivity(), SessionListFragment.SessionSelection, 
     }
 
     private fun sendWikiIntent() {
-        val intent = Intent("android.intent.action.VIEW", Uri.parse("https://github.com/CypherpunkArmory/AutoKaaj OS/wiki"))
+        val intent = Intent("android.intent.action.VIEW", Uri.parse("https://github.com/CypherpunkArmory/UserLAnd/wiki"))
         startActivity(intent)
     }
 
