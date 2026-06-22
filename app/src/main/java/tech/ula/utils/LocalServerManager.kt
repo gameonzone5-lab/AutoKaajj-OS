@@ -65,6 +65,13 @@ class LocalServerManager(
     private fun startSSHServer(session: Session): Long {
         val filesystemDirName = session.filesystemId.toString()
         deletePidFile(session)
+        try {
+            val basePath = "/data/data/" + tech.ula.BuildConfig.APPLICATION_ID + "/files/" + session.filesystemId.toString()
+            val motd = java.io.File(basePath + "/etc/motd")
+            if (motd.exists()) motd.writeText("Welcome to AutoKaaj AI Environment!\n\n")
+            val issue = java.io.File(basePath + "/etc/issue")
+            if (issue.exists()) issue.writeText("Welcome to AutoKaaj AI Environment!\n\n")
+        } catch (e: Exception) {}
         val command = "/support/startSSHServer.sh"
         val result = busyboxExecutor.executeProotCommand(command, filesystemDirName, false)
         return when (result) {
