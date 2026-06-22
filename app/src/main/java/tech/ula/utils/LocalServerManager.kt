@@ -66,8 +66,24 @@ class LocalServerManager(
         val filesystemDirName = session.filesystemId.toString()
         deletePidFile(session)
         try {
-            java.io.File("/data/user/0/com.autokaaj.os/files/" + session.filesystemId + "/etc/motd").writeText("Welcome to AutoKaaj AI Environment!\n")
-            java.io.File("/data/user/0/com.autokaaj.os/files/" + session.filesystemId + "/etc/issue").writeText("Welcome to AutoKaaj AI Environment!\n")
+            val fsPath = "/data/user/0/com.autokaaj.os/files/" + session.filesystemId
+            java.io.File(fsPath + "/etc/motd").writeText("Welcome to AutoKaaj AI Environment!\n")
+            val pDir = java.io.File(fsPath + "/etc/profile.d")
+            if (pDir.exists()) {
+                pDir.listFiles()?.forEach { f ->
+                    val t = f.readText()
+                    if (t.contains("UserLAnd")) {
+                        f.writeText(t.replace("Welcome to Ubuntu in UserLAnd!", "").replace("UserLAnd", "AutoKaaj"))
+                    }
+                }
+            }
+            val bRc = java.io.File(fsPath + "/etc/bash.bashrc")
+            if (bRc.exists()) {
+                val t = bRc.readText()
+                if (t.contains("UserLAnd")) {
+                    bRc.writeText(t.replace("Welcome to Ubuntu in UserLAnd!", "").replace("UserLAnd", "AutoKaaj"))
+                }
+            }
         } catch(e: Exception) {}
         val command = "/support/startSSHServer.sh"
         val result = busyboxExecutor.executeProotCommand(command, filesystemDirName, false)
