@@ -65,7 +65,7 @@ class LocalServerManager(
     private fun startSSHServer(session: Session): Long {
         val filesystemDirName = session.filesystemId.toString()
         deletePidFile(session)
-        val command = "sh -c \"echo Welcome to AutoKaaj AI Environment! > /etc/motd \val command = "/support/startSSHServer.sh"\val command = "/support/startSSHServer.sh" /support/startSSHServer.sh\""
+        val command = "sh -c \"echo Welcome to AutoKaaj AI Environment! > /etc/motd && /support/startSSHServer.sh\""
         val result = busyboxExecutor.executeProotCommand(command, filesystemDirName, false)
         return when (result) {
             is OngoingExecution -> result.process.pid()
